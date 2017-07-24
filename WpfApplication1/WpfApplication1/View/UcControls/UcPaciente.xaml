@@ -1,0 +1,229 @@
+﻿<UserControl x:Class="WpfApplication1.View.UcControls.UcPaciente"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApplication1.View.UcControls"
+              mc:Ignorable="d" Width="1366" Height="735"  MinHeight="660" MinWidth="1214" 
+                      
+                      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+     xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+     xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" >
+    <Grid Background="#C2D5F8"  >
+        <TabControl Margin="0,0,0,0">
+            <TabItem Header="Agregar Paciente">
+                <Grid Background="#FFE5E5E5" Margin="0,-3,0,0">
+                    <Label x:Name="label" Content="AGREGAR PACIENTE&#xA;" HorizontalAlignment="Left" Margin="405,45,0,0" VerticalAlignment="Top" Height="50" Width="257"/>
+                    <Label x:Name="label1" Content="Nombre" HorizontalAlignment="Left" Margin="50,107,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddNomPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="182,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy" Controls:TextBoxHelper.ClearTextButton="True" Content="Apellido PAterno" HorizontalAlignment="Left" Margin="50,148,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddApPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="182,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy1" Content="Apellido Materno" HorizontalAlignment="Left" Margin="51,187,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddAmPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="183,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy2" Content="Edad" HorizontalAlignment="Left" Margin="52,223,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddEdadPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="184,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy3" Content="Sexo" HorizontalAlignment="Left" Margin="51,263,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddSexPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="183,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy4" Content="Ocupacion" HorizontalAlignment="Left" Margin="51,304,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddOcuPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="183,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy5" Content="Fecha de Nacimiento" HorizontalAlignment="Left" Margin="52,343,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddFechPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="184,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy6" Content="Estado Civil" HorizontalAlignment="Left" Margin="53,379,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddEstatPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="185,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy7" Content="RFC" HorizontalAlignment="Left" Margin="51,418,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddRFCPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="183,419,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy8" Content="CURP" HorizontalAlignment="Left" Margin="51,459,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddCURPPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="183,460,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy9" Content="Telefomo Casa" HorizontalAlignment="Left" Margin="52,498,0,0" VerticalAlignment="Top"/>
+
+                    <Label x:Name="label1_Copy10" Content="Telefono Movil" HorizontalAlignment="Left" Margin="53,534,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddTelMPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="185,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy11" Content="Email" HorizontalAlignment="Left" Margin="327,108,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAddMailPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="397,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Copy12" Content="NumeroCasa" HorizontalAlignment="Left" Margin="307,153,0,0" VerticalAlignment="Top" Height="27" Width="85"/>
+                    <TextBox x:Name="txtAddNumPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="397,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+                    <TextBox x:Name="txtAddTelCPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="185,499,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124"/>
+                    <Controls:Tile VerticalAlignment="Top" Click=" btnRegresar" HorizontalAlignment="Left" Background="Black" ToolTip="Gestijsdehjhvv" Height="34" Width="75" Margin="-4,-1,0,0" >
+                        <Image Source="/Img/2.png" Width="83" Height="34"/>
+                    </Controls:Tile>
+                    <Button Content="AGREGAR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="167" Margin="625,134,0,0" Click="Button_Click"/>
+                    <Label x:Name="label1_Copy13" Content="Estado" HorizontalAlignment="Left" Margin="308,303,0,0" VerticalAlignment="Top" Height="27" Width="84"/>
+                    <Label x:Name="label1_Copy14" Content="Municipio" HorizontalAlignment="Left" Margin="308,271,0,0" VerticalAlignment="Top" Height="27" Width="103"/>
+                    <Label x:Name="label1_Copy15" Content="Colonia" HorizontalAlignment="Left" Margin="307,231,0,0" VerticalAlignment="Top" Height="27" Width="103"/>
+                    <Label x:Name="label1_Copy16" Content="Calle" HorizontalAlignment="Left" Margin="307,195,0,0" VerticalAlignment="Top" Height="27" Width="103"/>
+                    <TextBox x:Name="txtAddMuniPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="397,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txtAddColoniaPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="397,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txtAddCallePac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="397,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txtAddEstPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="397,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+
+                </Grid>
+
+            </TabItem>
+
+
+            <TabItem Header="Buscar Paciente">
+                <Grid Background="#FFE5E5E5" Margin="0,-3,0,-4">
+                    <Button Content="GENERAR REPORTE CON TODOS LOS PACIENTES" HorizontalAlignment="Left" VerticalAlignment="Top" Width="356" Margin="955,233,0,0" Click="Button_Click_1" Height="32"/>
+                    <Button Content="GENERAR REPORTE CON PACIENTE ACTUAL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="356" Margin="955,275,0,0" Click="Button_Click_2" Height="32"/>
+                    <Label x:Name="labedl1" Content="Nombre" HorizontalAlignment="Left" Margin="50,107,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtBusNomPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="182,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1fcv_Copy" Content="Apellido PAterno" HorizontalAlignment="Left" Margin="330,112,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtBusApPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="462,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_cvCopy1"  Controls:TextBoxHelper.ClearTextButton="True" Content="Apellido Materno" HorizontalAlignment="Left" Margin="636,112,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtBusAmPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="768,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <DataGrid x:Name="dtgBuscarPac" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="75,253,0,0" VerticalAlignment="Top" Height="238" Width="751">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre"  Binding="{Binding Nombre}"/>
+                            <DataGridTextColumn Header="ApePaterno"  Binding="{Binding ApePaterno}"/>
+                            <DataGridTextColumn Header="ApeMaterno"  Binding="{Binding ApeMaterno}"/>
+                            <DataGridTextColumn Header="Edad"  Binding="{Binding Edad}"/>
+                            <DataGridTextColumn Header="Sexo"  Binding="{Binding Sexo}"/>
+                            <DataGridTextColumn Header="FechaNacimiento"  Binding="{Binding FechaNacimiento}"/>
+                            <DataGridTextColumn Header="EstadoCivil"  Binding="{Binding EstadoCivil}"/>
+                            <DataGridTextColumn Header="RFC"  Binding="{Binding RFC}"/>
+                            <DataGridTextColumn Header="CURP"  Binding="{Binding CURP}"/>
+                            <DataGridTextColumn Header="Email"  Binding="{Binding Email}"/>
+                            <DataGridTextColumn Header="TelMovil"  Binding="{Binding TelMovil}"/>
+                            <DataGridTextColumn Header="TelCasa"  Binding="{Binding TelCasa}"/>
+                            <DataGridTextColumn Header="NumeroCasa"  Binding="{Binding NumeroCasa}"/>
+                            <DataGridTextColumn Header="Calle"  Binding="{Binding Calle}"/>
+                            <DataGridTextColumn Header="Colonia"  Binding="{Binding Colonia}"/>
+                            <DataGridTextColumn Header="Municipio"  Binding="{Binding Municipio}"/>
+                            <DataGridTextColumn Header="Estado"  Binding="{Binding Estado}"/>
+                            <DataGridTextColumn Header="Ocupacion"  Binding="{Binding Ocupacion}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button x:Name="btnBucarPac" Content="BUSCAR" HorizontalAlignment="Left" Margin="1236,118,0,0" VerticalAlignment="Top" Width="75" Click="btnBucarPac_Click"/>
+                    <Controls:Tile VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" ToolTip="Gestijsdehjhvv" Height="34" Width="75" Click=" btnRegresar" Margin="-4,-1,0,0" >
+                        <Image Source="/Img/2.png" Width="83" Height="34"/>
+                    </Controls:Tile>
+                    <Label x:Name="label1_cvCopy1_Copy"  Controls:TextBoxHelper.ClearTextButton="True" Content="Fecha de Nacimiento" HorizontalAlignment="Left" Margin="929,112,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtBusFechPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="1043,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="Modificar Paciente" x:Name="AddPac">
+                <Grid Background="#FFE5E5E5" Margin="-2,-10,-2,-5.4">
+                    <Label x:Name="labdel1" Content="Nombre" HorizontalAlignment="Left" Margin="80,209,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtModNomPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="212,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1dfg_Copy" Content="Apellido PAterno" HorizontalAlignment="Left" Margin="80,250,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtModApPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="212,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labeldfg1_Copy1" Content="Apellido Materno" HorizontalAlignment="Left" Margin="81,289,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtModAmPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="213,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labeltr1_Copy2" Content="Edad" HorizontalAlignment="Left" Margin="82,325,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtModEdadPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="214,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1tr_Copy3" Content="Sexo" HorizontalAlignment="Left" Margin="81,365,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtModSexPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="213,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1rt_Copy4" Content="Ocupacion" HorizontalAlignment="Left" Margin="81,406,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtModOcuPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="213,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_rtCopy5" Content="Fecha de Nacimiento" HorizontalAlignment="Left" Margin="82,451,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtModFechPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="214,446,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_Ctropy6" Content="Estado Civil" HorizontalAlignment="Left" Margin="378,265,0,0" VerticalAlignment="Top" Width="103"/>
+                    <TextBox x:Name="txtModEstatCivPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="501,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_rtCopy7" Content="RFC" HorizontalAlignment="Left" Margin="378,307,0,0" VerticalAlignment="Top" Width="103"/>
+                    <TextBox x:Name="txtModRFCPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="499,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1_utCopy8" Content="CURP" HorizontalAlignment="Left" Margin="378,357,0,0" VerticalAlignment="Top" Width="103"/>
+                    <TextBox x:Name="txtModCURPPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="501,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labelfd1_Copy9" Content="Telefomo Casa" HorizontalAlignment="Left" Margin="378,400,0,0" VerticalAlignment="Top" Width="103"/>
+
+                    <Label x:Name="labelfds1_Copy10" Content="Telefono Movil" HorizontalAlignment="Left" Margin="378,445,0,0" VerticalAlignment="Top" Width="103"/>
+                    <TextBox x:Name="txtModTelMPac"  Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="501,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1fd_Copy11" Content="Email" HorizontalAlignment="Left" Margin="378,218,0,0" VerticalAlignment="Top" Width="92"/>
+                    <TextBox x:Name="txtModEmailPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="501,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <DataGrid x:Name="dtgModPac" AutoGenerateColumns="False" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Margin="101,52,0,0" VerticalAlignment="Top" Height="152" Width="1167">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="No Paciente"  Binding="{Binding IdPaciente}"/>
+                            <DataGridTextColumn Header="Nombre"  Binding="{Binding Nombre}"/>
+                            <DataGridTextColumn Header="ApePaterno"  Binding="{Binding ApePaterno}"/>
+                            <DataGridTextColumn Header="ApeMaterno"  Binding="{Binding ApeMaterno}"/>
+                            <DataGridTextColumn Header="Edad"  Binding="{Binding Edad}"/>
+                            <DataGridTextColumn Header="Sexo"  Binding="{Binding Sexo}"/>
+                            <DataGridTextColumn Header="FechaNacimiento"  Binding="{Binding FechaNacimiento}"/>
+                            <DataGridTextColumn Header="EstadoCivil"  Binding="{Binding EstadoCivil}"/>
+                            <DataGridTextColumn Header="RFC"  Binding="{Binding RFC}"/>
+                            <DataGridTextColumn Header="CURP"  Binding="{Binding CURP}"/>
+                            <DataGridTextColumn Header="Email"  Binding="{Binding Email}"/>
+                            <DataGridTextColumn Header="TelMovil"  Binding="{Binding TelMovil}"/>
+                            <DataGridTextColumn Header="TelCasa"  Binding="{Binding TelCasa}"/>
+                            <DataGridTextColumn Header="NumeroCasa"  Binding="{Binding NumeroCasa}"/>
+                            <DataGridTextColumn Header="Calle"  Binding="{Binding Calle}"/>
+                            <DataGridTextColumn Header="Colonia"  Binding="{Binding Colonia}"/>
+                            <DataGridTextColumn Header="Municipio"  Binding="{Binding Municipio}"/>
+                            <DataGridTextColumn Header="Estado"  Binding="{Binding Estado}"/>
+                            <DataGridTextColumn Header="Ocupacion"  Binding="{Binding Ocupacion}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBox x:Name="txtModTelCPac" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="501,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Controls:Tile VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" ToolTip="Gestijsdehjhvv" Height="34" Width="75" Click=" btnRegresar" Margin="-5,6,0,0" >
+                        <Image Source="/Img/2.png" Width="83" Height="34"/>
+                    </Controls:Tile>
+                    <Button x:Name="btnModPac" Content="MODIFICAR" HorizontalAlignment="Left" Margin="853,326,0,0" VerticalAlignment="Top" Width="216" Height="100" Click="btnModPac_Click"/>
+                    <Label x:Name="label1_Cop" Content="Estado" HorizontalAlignment="Left" Margin="80,538,0,0" VerticalAlignment="Top" Height="27" Width="124"/>
+                    <Label x:Name="label1_C14" Content="Municipio" HorizontalAlignment="Left" Margin="80,491,0,0" VerticalAlignment="Top" Height="27" Width="103"/>
+                    <Label x:Name="labelopy15" Content="Colonia" HorizontalAlignment="Left" Margin="378,538,0,0" VerticalAlignment="Top" Height="27" Width="103"/>
+                    <Label x:Name="lab1_Copy16" Content="Calle" HorizontalAlignment="Left" Margin="378,491,0,0" VerticalAlignment="Top" Height="27" Width="118"/>
+                    <TextBox x:Name="txtModMuniPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="214,497,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txtModColoniaPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="501,539,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txtModCallePac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="501,492,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txtModEstPac" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="214,544,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1fd_Copy" Content="Elige No de Paciente" HorizontalAlignment="Left" Margin="713,227,0,0" VerticalAlignment="Top" Width="151"/>
+                    <TextBox x:Name="txtModIdP" Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="23" Margin="934,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Actualize todos los campos." HorizontalAlignment="Left" Margin="110,14,0,0" VerticalAlignment="Top" Width="440"/>
+                    <Button x:Name="btnElegire" Content="ELEGIR" HorizontalAlignment="Left" Margin="1091,229,0,0" VerticalAlignment="Top" Width="127" Height="26" Click="btnElegire_Click"/>
+                    <Label x:Name="label1_Cop_Copy" Content="NumeroCasa" HorizontalAlignment="Left" Margin="80,585,0,0" VerticalAlignment="Top" Height="27" Width="124"/>
+                    <TextBox x:Name="txtModNumC" Controls:TextBoxHelper.ClearTextButton="True" HorizontalAlignment="Left" Height="23" Margin="214,586,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+                </Grid>
+
+            </TabItem>
+
+
+            <TabItem Header="Eliminar Paciente">
+                <Grid Background="#FFE5E5E5" Margin="2,-4,-2,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="763*"/>
+                        <ColumnDefinition Width="597*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="label3" Content="Pacientes A eliminar" HorizontalAlignment="Left" Margin="437,52,0,0" VerticalAlignment="Top"/>
+                    <DataGrid x:Name="dtgDelPac"  HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Height="397" Width="899" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="No Paciente"  Binding="{Binding IdPaciente}"/>
+                            <DataGridTextColumn Header="Nombre"  Binding="{Binding Nombre}"/>
+                            <DataGridTextColumn Header="ApePaterno"  Binding="{Binding ApePaterno}"/>
+                            <DataGridTextColumn Header="ApeMaterno"  Binding="{Binding ApeMaterno}"/>
+                            <DataGridTextColumn Header="Edad"  Binding="{Binding Edad}"/>
+                            <DataGridTextColumn Header="Sexo"  Binding="{Binding Sexo}"/>
+                            <DataGridTextColumn Header="FechaNacimiento"  Binding="{Binding FechaNacimiento}"/>
+                            <DataGridTextColumn Header="EstadoCivil"  Binding="{Binding EstadoCivil}"/>
+                            <DataGridTextColumn Header="RFC"  Binding="{Binding RFC}"/>
+                            <DataGridTextColumn Header="CURP"  Binding="{Binding CURP}"/>
+                            <DataGridTextColumn Header="Email"  Binding="{Binding Email}"/>
+                            <DataGridTextColumn Header="TelMovil"  Binding="{Binding TelMovil}"/>
+                            <DataGridTextColumn Header="TelCasa"  Binding="{Binding TelCasa}"/>
+                            <DataGridTextColumn Header="NumeroCasa"  Binding="{Binding NumeroCasa}"/>
+                            <DataGridTextColumn Header="Calle"  Binding="{Binding Calle}"/>
+                            <DataGridTextColumn Header="Colonia"  Binding="{Binding Colonia}"/>
+                            <DataGridTextColumn Header="Municipio"  Binding="{Binding Municipio}"/>
+                            <DataGridTextColumn Header="Estado"  Binding="{Binding Estado}"/>
+                            <DataGridTextColumn Header="Ocupacion"  Binding="{Binding Ocupacion}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Controls:Tile VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black" ToolTip="Gestijsdehjhvv" Height="34" Width="75" Click="btnRegresar" Margin="-4,-1,0,0" >
+                        <Image Source="/Img/2.png" Width="83" Height="34"/>
+                    </Controls:Tile>
+                    <Button x:Name="btnDelPac" Content="ELIMINAR PACIENTE&#xD;&#xA;" HorizontalAlignment="Left" Margin="197.8,237,0,0" VerticalAlignment="Top" Width="242" Height="146" Grid.Column="1" Click="btnDelPac_Click"/>
+                    <Label Content="Elige No Paciente" HorizontalAlignment="Left" Margin="197.8,119,0,0" VerticalAlignment="Top" Width="109" Grid.Column="1"/>
+                    <TextBox x:Name="txtDelIdP" HorizontalAlignment="Left" Height="23" Margin="319.8,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                </Grid>
+
+            </TabItem>
+
+            <Grid/>
+
+
+        </TabControl>
+    </Grid>
+</UserControl>

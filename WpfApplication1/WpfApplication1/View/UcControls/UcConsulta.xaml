@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="WpfApplication1.View.UcControls.UcConsulta"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApplication1.View.UcControls"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+     xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+     xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" 
+           
+              mc:Ignorable="d" Width="1366" Height="735"  MinHeight="660" MinWidth="1214" >
+
+    <Grid Background="#C2D5F8">
+
+        <TabControl Margin="0,0,0,-1">
+            <TabItem Header="Consulta">
+                <Grid Background="#FFE5E5E5" Margin="10,-15,-10,14.4">
+                    <Controls:Tile VerticalAlignment="Top"  Click=" btnRegresar" HorizontalAlignment="Left" Background="Black" ToolTip="Gestijsdehjhvv" Height="34" Width="75"  Margin="-4,-1,0,0" >
+                        <Image Source="/Img/2.png" Width="83" Height="34"/>
+                    </Controls:Tile>
+                    <Label x:Name="label" Content="Buscar Paciente&#xA;" HorizontalAlignment="Left" Margin="50,57,0,0" VerticalAlignment="Top" Height="25" Width="252"/>
+                    <Label x:Name="label1_Copy1" Content="MOTIVO" HorizontalAlignment="Left" Margin="360,425,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label1_Copy2" Content="PESO" HorizontalAlignment="Left" Margin="10,379,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtPeso" HorizontalAlignment="Left" Height="23" Margin="126,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+                    <Label x:Name="label1_Copy3"  Controls:TextBoxHelper.ClearTextButton="True"   Content="ALTURA" HorizontalAlignment="Left" Margin="10,425,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="texAltura" HorizontalAlignment="Left" Height="23" Margin="126,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+                    <Label x:Name="label1_Copy4"  Controls:TextBoxHelper.ClearTextButton="True"   Content="PRESION ARTERIAL" HorizontalAlignment="Left" Margin="10,465,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtIdPac"  Controls:TextBoxHelper.ClearTextButton="True"   HorizontalAlignment="Left" Height="23" Margin="257,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+                    <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="50,230,0,0" VerticalAlignment="Top" Height="120" Width="457">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="No Paciente"  Binding="{Binding IdPaciente}"/>
+                            <DataGridTextColumn Header="Nombre"  Binding="{Binding Nombre}"/>
+                            <DataGridTextColumn Header="ApePaterno"  Binding="{Binding ApePaterno}"/>
+                            <DataGridTextColumn Header="ApeMaterno"  Binding="{Binding ApeMaterno}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBlock x:Name="textBlock"   Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Margin="50,172,0,0" TextWrapping="Wrap" Text="Elegir Paciente" VerticalAlignment="Top" Height="41" Width="182" FontSize="25"/>
+                    <TextBox x:Name="txtPresion" HorizontalAlignment="Left" Height="23" Margin="126,465,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+                    <TextBox x:Name="txtMotivo" HorizontalAlignment="Left" Height="112" Margin="462,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="524" RenderTransformOrigin="0.493,0.474"/>
+                    <Label x:Name="label1_Copy" Content="ANTECEDENTES" HorizontalAlignment="Left" Margin="330,545,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAntece" HorizontalAlignment="Left" Height="86" Margin="462,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="524"/>
+                    <Button x:Name="btnAddcita" Content="Agregar Consulta"  Controls:TextBoxHelper.ClearTextButton="True"   HorizontalAlignment="Left" Margin="1034,465,0,0" VerticalAlignment="Top" Width="157" Height="72" Click="btnAddcita_Click"/>
+                    <Label x:Name="label1_Copy5" Content="DIAGNOSTICO" HorizontalAlignment="Left" Margin="648,88,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label1_Copy6" Content="RECETA" HorizontalAlignment="Left" Margin="648,268,0,0" VerticalAlignment="Top" Width="87"/>
+                    <TextBox x:Name="txtDiag" HorizontalAlignment="Left" Height="112" Margin="756,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="524" RenderTransformOrigin="0.493,0.474"/>
+                    <TextBox x:Name="txtRec" HorizontalAlignment="Left" Height="112" Margin="756,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="524" RenderTransformOrigin="0.493,0.474"/>
+                    <Button x:Name="btnAddcita_Copy" Content="GENERAR REPORTE CONSULTA"  Controls:TextBoxHelper.ClearTextButton="True"   HorizontalAlignment="Left" Margin="1034,552,0,0" VerticalAlignment="Top" Width="246" Height="41" Click="btnAddcita_Copy_Click"/>
+                    <Button x:Name="btnReporteReceta" Content="GENERAR REPORTE RECETA"  Controls:TextBoxHelper.ClearTextButton="True"   HorizontalAlignment="Left" Margin="1034,604,0,0" VerticalAlignment="Top" Width="246" Height="44" Click="btnReporteReceta_Click"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Estudio De Laboratorio">
+                <Grid Background="#FFE5E5E5" Margin="0,-2,0,-1.6">
+                    <Controls:Tile VerticalAlignment="Top"  Click=" btnRegresar" HorizontalAlignment="Left" Background="Black" ToolTip="Gestijsdehjhvv" Height="34" Width="75"  Margin="-4,-1,0,0" >
+                        <Image Source="/Img/2.png" Width="83" Height="34"/>
+                    </Controls:Tile>
+                    <Label x:Name="laxcbel" Content="ELEGIR LABORATORIO"   Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Center" Margin="262,42,892,0" VerticalAlignment="Top" Height="50" Width="206"/>
+                    <Label x:Name="label1_Copy12" Content="ORDEN"   Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Margin="78,470,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btnAddEL" Content="IMPRIMIR"   Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Margin="582,579,0,0" VerticalAlignment="Top" Width="187" Click="btnAddEL_Click" />
+                    <TextBox x:Name="txtorden"   Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Left" Height="140" Margin="195,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1082"/>
+                    <DataGrid x:Name="dtgLabs" HorizontalAlignment="Left" Height="201" Margin="78,120,0,0" VerticalAlignment="Top" Width="1226">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="No Laboratorio"  Binding="{Binding IdLab}"/>
+                            <DataGridTextColumn Header="Nombre"  Binding="{Binding Nombre}"/>
+                            <DataGridTextColumn Header="Nombre Del Responsable" Binding="{Binding Director}"/>
+                            <DataGridTextColumn Header="Calle" Binding="{Binding Telefono}"/>
+                            <DataGridTextColumn Header="Calle" Binding="{Binding Calle}"/>
+                            <DataGridTextColumn Header="Colonia" Binding="{Binding Colonia}"/>
+                            <DataGridTextColumn Header="Colonia" Binding="{Binding Municipio}"/>
+                            <DataGridTextColumn Header="Numero" Binding="{Binding Estado}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBox x:Name="txtIdlab" HorizontalAlignment="Left" Height="50" Margin="468,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+                    <Label x:Name="laxcbel_Copy" Content="PACIENTE ELEGIDO"   Controls:TextBoxHelper.ClearTextButton="True"  HorizontalAlignment="Center" Margin="732,42,422,0" VerticalAlignment="Top" Height="50" Width="206"/>
+                    <TextBox x:Name="txtId2" HorizontalAlignment="Left" Height="50" Margin="859,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+
+                </Grid>
+
+            </TabItem>
+
+            <Grid>
+            </Grid>
+
+
+        </TabControl>
+    </Grid>
+</UserControl>

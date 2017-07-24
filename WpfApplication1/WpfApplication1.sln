@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{CBA20F60-7E63-431D-A7AF-73CD1C6824DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reporteador", "..\..\..\Documents\Visual Studio 2015\Projects\Reporteador\Reporteador.csproj", "{7ABC1D63-3E7D-4BE7-A489-1C4529E46AE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBA20F60-7E63-431D-A7AF-73CD1C6824DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA20F60-7E63-431D-A7AF-73CD1C6824DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA20F60-7E63-431D-A7AF-73CD1C6824DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA20F60-7E63-431D-A7AF-73CD1C6824DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABC1D63-3E7D-4BE7-A489-1C4529E46AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABC1D63-3E7D-4BE7-A489-1C4529E46AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABC1D63-3E7D-4BE7-A489-1C4529E46AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABC1D63-3E7D-4BE7-A489-1C4529E46AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
